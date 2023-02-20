@@ -1,0 +1,32 @@
+    def login_function(self):
+        user = self.username.text()
+        password = self.password.text()
+
+        if len(user) == 0 or len(password) == 0:
+            self.label_error.setText("Please input all field")
+
+        else:
+            try:
+                mydb = mc.connect(
+                    host="localhost",
+                    user="root",
+                    password="",
+                    database="billingdb"
+                )
+                mycursor = mydb.cursor()
+                query = "SELECT username,password from users where username like '" + user + "'and password like '" + password + "'"
+
+                mycursor.execute(query)
+                result_password = mycursor.fetchone()
+
+                if result_password == None:
+                    self.label_error.setText("Invalid username and password")
+
+                else:
+
+                    # print("successfully logged in.")
+                    self.goto_MainWindow()
+                    # self.label_error.setText("successfully logged in.")
+
+            except mc.Error as e:
+                self.label_error.setText("Error in connection")

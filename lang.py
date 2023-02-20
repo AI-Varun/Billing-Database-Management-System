@@ -1,0 +1,1 @@
+# class InvoiceGenerator.api.Invoice(client, provider, creator):

@@ -1,0 +1,43 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>Add item.png</file>
+    <file>Add User.png</file>
+    <file>Add User1.png</file>
+    <file>BackButton.png</file>
+    <file>background.qrc</file>
+    <file>background2.png</file>
+    <file>cashier-supermarket-billing-software-pos-pchvector-e1584790103322.jpg</file>
+    <file>Content Page Background pic.jpg</file>
+    <file>Create Invoice.png</file>
+    <file>Customer Details.jpg</file>
+    <file>Customer_Details1.png</file>
+    <file>Delete customer.png</file>
+    <file>Delete item.png</file>
+    <file>Exit.jpg</file>
+    <file>Exit1.png</file>
+    <file>Icons.qrc</file>
+    <file>images.jpg</file>
+    <file>images.png</file>
+    <file>images.qrc</file>
+    <file>Img1.jpg</file>
+    <file>img2.jpg</file>
+    <file>img3.jpg</file>
+    <file>img4.jpg</file>
+    <file>Inv1.png</file>
+    <file>Inv2.png</file>
+    <file>Inv3.png</file>
+    <file>Invoice_Main_page.jpg</file>
+    <file>Item Details.png</file>
+    <file>left.png</file>
+    <file>Logout.png</file>
+    <file>previous.png</file>
+    <file>toggle.png</file>
+    <file>update customer.jpg</file>
+    <file>update customer1.png</file>
+    <file>Update Item.png</file>
+    <file>img4.jpg</file>
+    <file>left.png</file>
+    <file>BackButton.png</file>
+    <file>previous.png</file>
+  </qresource>
+</RCC>

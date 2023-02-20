@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>Inv3.png</file>
+    <file>Inv1.png</file>
+    <file>Invoice_Main_page.jpg</file>
+    <file>img3.jpg</file>
+    <file>Img1.jpg</file>
+    <file>Img1.jpg</file>
+    <file>cashier-supermarket-billing-software-pos-pchvector-e1584790103322.jpg</file>
+    <file>new/Create_Invoice3.png</file>
+    <file>new/Create_Invoice2.png</file>
+    <file>toggle.png</file>
+    <file>Logout.png</file>
+    <file>Create Invoice.png</file>
+    <file>Item Details.png</file>
+    <file>Delete item.png</file>
+    <file>Update Item.png</file>
+    <file>Add item.png</file>
+    <file>Delete customer.png</file>
+    <file>Customer_Details1.png</file>
+    <file>update customer1.png</file>
+    <file>update customer.jpg</file>
+    <file>images.jpg</file>
+    <file>Add User1.png</file>
+    <file>Add User.png</file>
+    <file>cashier-supermarket-billing-software-pos-pchvector-e1584790103322.jpg</file>
+    <file>img2.jpg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>974</width>
+    <height>722</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Bill Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{background-image: url(:/newPrefix/cashier-supermarket-billing-software-pos-pchvector-e1584790103322.jpg);}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="left_Frame_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="currentIndex">
+          <number>8</number>
+         </property>
+         <widget class="QWidget" name="create_Invoice_Page">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="new_Customer_Page">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 170, 0);</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="update_Customer_Page"/>
+         <widget class="QWidget" name="customer_Details_Page"/>
+         <widget class="QWidget" name="delete_Customer_Page"/>
+         <widget class="QWidget" name="add_Item_Page"/>
+         <widget class="QWidget" name="update_Item_Page"/>
+         <widget class="QWidget" name="item_Details_Page"/>
+         <widget class="QWidget" name="delete_Item_page"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="right_Frame">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+QPushButton:pressed {
+border-style: inset;
+background: qradialgradient(
+cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+);
+}</string>
+         </property>
+         <property name="text">
+          <string>Create Invoice</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images/background.qrc">
+           <normaloff>:/newPrefix/Create Invoice.png</normaloff>:/newPrefix/Create Invoice.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+QPushButton:pressed {
+border-style: inset;
+background: qradialgradient(
+cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+);
+}</string>
+         </property>
+         <property name="text">
+          <string>New Customer</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images/background.qrc">
+           <normaloff>:/newPrefix/Add User1.png</normaloff>:/newPrefix/Add User1.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+QPushButton:pressed {
+border-style: inset;
+background: qradialgradient(
+cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+);
+}</string>
+         </property>
+         <property name="text">
+          <string>Update Customer</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images/background.qrc">
+           <normaloff>:/newPrefix/update customer1.png</normaloff>:/newPrefix/update customer1.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+QPushButton:pressed {
+border-style: inset;
+background: qradialgradient(
+cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+);
+}</string>
+         </property>
+         <property name="text">
+          <string>Customer Details</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images/background.qrc">
+           <normaloff>:/newPrefix/Customer_Details1.png</normaloff>:/newPrefix/Customer_Details1.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+QPushButton:pressed {
+border-style: inset;
+background: qradialgradient(
+cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+);
+}</string>
+         </property>
+         <property name="text">
+          <string>Delete Customer</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images/background.qrc">
+           <normaloff>:/newPrefix/Delete customer.png</normaloff>:/newPrefix/Delete customer.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+QPushButton:pressed {
+border-style: inset;
+background: qradialgradient(
+cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+);
+}</string>
+         </property>
+         <property name="text">
+          <string>Add Item             </string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images/background.qrc">
+           <normaloff>:/newPrefix/Add item.png</normaloff>:/newPrefix/Add item.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+QPushButton:pressed {
+border-style: inset;
+background: qradialgradient(
+cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+);
+}</string>
+         </property>
+         <property name="text">
+          <string>Update Item       </string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images/background.qrc">
+           <normaloff>:/newPrefix/Update Item.png</normaloff>:/newPrefix/Update Item.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+QPushButton:pressed {
+border-style: inset;
+background: qradialgradient(
+cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+);
+}</string>
+         </property>
+         <property name="text">
+          <string>Item Details       </string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images/background.qrc">
+           <normaloff>:/newPrefix/Item Details.png</normaloff>:/newPrefix/Item Details.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+QPushButton:pressed {
+border-style: inset;
+background: qradialgradient(
+cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+);
+}</string>
+         </property>
+         <property name="text">
+          <string>Delete Item        </string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images/background.qrc">
+           <normaloff>:/newPrefix/Delete item.png</normaloff>:/newPrefix/Delete item.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+QPushButton:pressed {
+border-style: inset;
+background: qradialgradient(
+cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+);
+}</string>
+         </property>
+         <property name="text">
+          <string>Logout                </string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images/background.qrc">
+           <normaloff>:/newPrefix/Logout.png</normaloff>:/newPrefix/Logout.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>35</width>
+           <height>35</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_9</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>pushButton_10</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Images/background.qrc"/>
+ </resources>
+ <connections/>
+</ui>

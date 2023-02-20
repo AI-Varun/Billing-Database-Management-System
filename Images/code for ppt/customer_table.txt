@@ -1,0 +1,40 @@
+from PyQt6.QtWidgets import QApplication, QWidget,QComboBox,QLabel,QMainWindow,QStackedWidget,\
+    QPushButton,QLineEdit,QFrame,QTableWidget,QTableWidgetItem
+from PyQt6.QtGui import QIcon, QFont,QPixmap
+from PyQt6.QtCore import QSize, Qt, QPropertyAnimation,QEasingCurve
+from PyQt6 import uic
+import sys
+import mysql.connector as mc
+
+
+
+
+class LoginScreen(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        uic.loadUi("Login.ui",self)
+        self.username = self.findChild(QLineEdit, "lineEdit_Username")
+        self.password = self.findChild(QLineEdit, "lineEdit_Password")
+        self.label_error = self.findChild(QLabel, "label_Error")
+        self.login_2 = self.findChild(QPushButton, "login_2")
+        self.login_2.clicked.connect(self.login_function)
+        self.welcome_Back = self.findChild(QPushButton, "pushButton_back")
+        self.welcome_Back.setIcon(QIcon("Images/previous.png"))
+        self.welcome_Back.clicked.connect(self.goto_welcome)
+
+
+class Create_acc_screen(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        uic.loadUi("SignUp.ui",self)
+        self.lineEdit_Username_SignUP = self.findChild(QLineEdit,"lineEdit_Username_SignUP")
+        self.lineEdit_Password_SignUP = self.findChild(QLineEdit, "lineEdit_Password_SignUP")
+        self.lineEdit_Confirm_Password_SignUP = self.findChild(QLineEdit, "lineEdit_Confirm_Password_SignUP")
+        self.label_Error_SignUp = self.findChild(QLabel, "label_Error_SignUp")
+        self.SignUp = self.findChild(QPushButton, "SignUp")
+        self.SignUp.clicked.connect(self.signUp_function)
+        self.pushButton_back_SignUp = self.findChild(QPushButton, "pushButton_back_SignUp")
+        self.pushButton_back_SignUp.setIcon(QIcon("Images/previous.png"))
+        self.pushButton_back_SignUp.clicked.connect(self.goto_welcomes)
